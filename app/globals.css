@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,body,:root {
+  height: 100%;
+}
  
 @layer base {
   :root {
@@ -74,3 +78,61 @@
     @apply bg-background text-foreground;
   }
 }
+
+.animate-fade-in {
+  animation: fade-in linear 0.5s;
+}
+
+.animate-fade-out {
+  animation: fade-out linear 0.5s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.animate-in {
+  animation: left-in-right linear 0.5s;
+}
+
+@keyframes left-in-right {
+  from {
+    transform: translateX(-8px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hlcJic {
+  transition: width 0.8s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+  will-change: width, transform;
+  width: 100%;
+  transform: translate3d(0px, 24px, 0px);
+  height: auto;
+}
+
+.jptfOZ {
+  transition: width 0.8s cubic-bezier(0.5, 0, 0, 1) 0s, transform 0.8s cubic-bezier(0.5, 0, 0, 1) 0s;
+  width: 143px;
+  height: auto;
+  will-change: width, transform;
+  transform: translate3d(0px, -24px, 0px);
+}
+
