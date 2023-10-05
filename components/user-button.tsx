@@ -14,9 +14,9 @@ const UserButton = () => {
   return (
     <DropdownMenu>
     <DropdownMenuTrigger>
-      <button className='pl-6' >
+      <div className='pl-6' >
         <User2 width={24} height={24} />
-      </button>
+      </div>
     </DropdownMenuTrigger>
     <DropdownMenuContent className='mt-6'>
       <DropdownMenuItem>Profile</DropdownMenuItem>

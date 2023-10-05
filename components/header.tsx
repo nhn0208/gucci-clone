@@ -6,7 +6,7 @@ import Logo from './logo'
 import CartButton from './cart-button'
 import UserButton from './user-button'
 import SearchButton from './search-button'
-import Sidebar from './sidebar'
+import Sidebar from './sidebar/sidebar'
 import ContactUs from './contact-us'
 
 const Header = () => {
