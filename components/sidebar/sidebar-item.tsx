@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SidebarSubList from "./sidebar-sub-list";
 
 // interface ItemProps {
@@ -21,7 +22,7 @@ const SidebarItem = ({title,href,children}:SidebarItemProps) => {
         </div>
       ):(
         <div className="lg:text-base lg:tracking-tight text-sm uppercase font-bold group flex items-center gap-x-2">
-          {title}
+          <Link href={`${href}`}>{title}</Link>
         </div>
       )}
     </div>

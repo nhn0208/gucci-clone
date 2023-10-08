@@ -5,7 +5,7 @@ const items = [
   { title:"Handbags", children: [
       { title: "View All",href:"/ca/handbags/"}
   ] },
-  { title:"Hravel"},
+  { title:"Travel"},
   { title:"Women", },
   { title:"Men", },
   { title:"MX", },
